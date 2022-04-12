@@ -34,6 +34,12 @@ Upload selection:
 
 ![20220412_215727](https://user-images.githubusercontent.com/30090189/163047067-d7906aa4-a06d-4999-87b3-9974f1c063cc.jpg)
 
+It could be programmed by other IDEs. 
+
+## Programmers
+
+There is an UART chip on-board. For programming, ST-Link could be used also through CLK and DIO pins. 
+
 ## Power
 
 For power management, this board uses two ICs. MCP73831 For battery management check the LiPo charging section below.
@@ -103,8 +109,13 @@ WHITEBoard White Pill has a two-row header with 42 pins in total. Here you can f
   * GND
    
 ## Dimensions
+
 Dimensions: (25.4 × 80.0 × 7.5) mm.
 
 ## Disclaimer
 
 WHITEBoard White Pill is an open-source development board. My small contribution to the community, that gave me so much. Feel free to use and modify as you want. It would be nice to add some credits if you do.
+
+## Known Issues
+
+In time of writing, it is not posible to use dev board with enabled USART support with Arduino IDE. The sketch will upload but it will not be executed.
